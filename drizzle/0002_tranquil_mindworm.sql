@@ -1,0 +1,1 @@
+ALTER TABLE `certificates` ADD `language` text DEFAULT 'uk' NOT NULL;

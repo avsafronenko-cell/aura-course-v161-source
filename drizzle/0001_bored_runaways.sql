@@ -1,0 +1,1 @@
+ALTER TABLE `certificates` ADD `gender` text DEFAULT 'male' NOT NULL;

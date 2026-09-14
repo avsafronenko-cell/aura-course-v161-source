@@ -1,0 +1,421 @@
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 16px clamp(14px, 2.4vw, 28px) 28px;
+  background: #f6f8ff;
+  color: #101426;
+}
+
+.pageHeader,
+.content {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 14px;
+}
+
+.backLink {
+  color: #5f6980;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.backLink:hover,
+.backLink:focus-visible {
+  color: #2b54f5;
+}
+
+.pageBrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.pageBrand span {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 11px;
+  background: #2b54f5;
+  color: #fff;
+}
+
+.viewport {
+  position: relative;
+  width: 98%;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.certificate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1600px;
+  height: 900px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform-origin: center center;
+  background: #050a1f;
+  font-family: Manrope, Arial, sans-serif;
+}
+
+.referenceImage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.dynamicLayer {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  color: #f7f7f4;
+}
+
+.dynamicNumber {
+  position: absolute;
+  top: 96px;
+  right: 84px;
+  color: #efbf50;
+  font-size: 19px;
+  letter-spacing: 0.16em;
+}
+
+.dynamicName {
+  position: absolute;
+  top: 224px;
+  left: 85px;
+  max-width: 690px;
+  margin: 0;
+  overflow: hidden;
+  color: #f7f7f4;
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dynamicCompletion {
+  position: absolute;
+  top: 343px;
+  left: 85px;
+  width: 620px;
+  margin: 0;
+  color: #f0f1f5;
+  font-size: 22px;
+  line-height: 1.58;
+}
+
+.dynamicCompletion strong {
+  color: #fff;
+  font-weight: 800;
+}
+
+.dynamicDate {
+  position: absolute;
+  bottom: 83px;
+  left: 85px;
+  color: #f7f7f4;
+  font-size: 27px;
+  line-height: 1.1;
+}
+
+.dynamicFooter {
+  position: absolute;
+  z-index: 2;
+  left: 70px;
+  bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 575px;
+  padding: 13px 15px 12px;
+  box-sizing: border-box;
+  background: transparent;
+  color: #f7f7f4;
+}
+
+.dynamicFooter strong {
+  font-size: 27px;
+  line-height: 1.1;
+}
+
+.dynamicFooter span {
+  color: #9ea7bd;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.actions button {
+  min-width: 230px;
+}
+
+.courseNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 13px 8px;
+  border: 1px solid #d8e1fb;
+  border-radius: 12px;
+  background: #f5f7ff;
+  text-align: left;
+}
+
+.courseNav > span {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #182c74;
+  color: #f8c66a;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.courseNav > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.courseNav b {
+  font-size: 12px;
+}
+
+.courseNav small {
+  margin-top: 3px;
+  color: #69738a;
+  font-size: 9px;
+}
+
+.courseNav em {
+  color: #2b54f5;
+  font-style: normal;
+}
+
+.profileLink {
+  width: 100%;
+  margin: 16px 0 2px;
+  padding: 12px 14px;
+  border: 1px solid #d8e1fb;
+  border-radius: 10px;
+  background: #f5f7ff;
+  color: #2b54f5;
+  text-align: left;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.profileLink:hover,
+.profileLink:focus-visible {
+  background: #eaf0ff;
+}
+
+.error,
+.requirement {
+  color: #c32038;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.error {
+  margin: 14px 0 0;
+}
+
+.courseSection {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.courseSection h1 {
+  margin: 8px 0;
+  font-size: clamp(28px, 4vw, 42px);
+}
+
+.previewLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2b54f5;
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.previewLink::after {
+  content: "→";
+  font-size: 20px;
+}
+
+.requirement {
+  margin: 20px 0 -12px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: end;
+  max-width: 760px;
+  margin: 28px 0 36px;
+  padding: 24px;
+  border: 1px solid #e0e7f6;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.form input[type="text"],
+.form input:not([type]) {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #cfd8ea;
+  border-radius: 9px;
+  padding: 11px 12px;
+  font: inherit;
+}
+
+.fieldInvalid input {
+  border-color: #d72f45;
+  background: #fff7f8;
+}
+
+.fieldInvalid {
+  color: #c32038;
+}
+
+.languageWarning {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #c32038;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gender,
+.genderInvalid {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.gender legend,
+.genderInvalid legend {
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.gender label,
+.genderInvalid label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #252d43;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.gender input,
+.genderInvalid input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2b54f5;
+}
+
+.genderInvalid legend {
+  color: #c32038;
+}
+
+.submit {
+  grid-column: 1 / -1;
+  justify-self: start;
+  min-width: 270px;
+}
+
+@media (max-width: 780px) {
+  .pageHeader {
+    align-items: flex-start;
+  }
+
+  .backLink {
+    font-size: 15px;
+  }
+
+  .pageBrand {
+    font-size: 20px;
+  }
+
+  .pageBrand span {
+    width: 34px;
+    height: 34px;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .gender,
+  .genderInvalid,
+  .submit {
+    grid-column: auto;
+  }
+
+  .submit {
+    width: 100%;
+    min-width: 0;
+  }
+}
